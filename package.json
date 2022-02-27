@@ -1,0 +1,28 @@
+{
+  "name": "clean.ui-api",
+  "version": "0.0.4DEV",
+  "description": "Official CleanUI NPM package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iIEkoT/cleanui.git"
+  },
+  "keywords": [
+    "ui",
+    "api_package",
+    "node"
+  ],
+  "author": "!ekot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iIEkoT/cleanui/issues"
+  },
+  "homepage": "https://github.com/iIEkoT/cleanui#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "definery": "^5.0.7"
+  }
+}

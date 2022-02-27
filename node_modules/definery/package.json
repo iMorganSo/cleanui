@@ -1,0 +1,24 @@
+{
+  "name": "definery",
+  "version": "5.0.7",
+  "description": "Define your javascript/node.js functions with definery!",
+  "main": "index.js",
+  "scripts": {
+    "test": "/Definery"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iIEkoT/Definer.git"
+  },
+  "keywords": [
+    "Definer",
+    "node.js",
+    "improver"
+  ],
+  "author": "!ekot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iIEkoT/Definer/issues"
+  },
+  "homepage": "https://github.com/iIEkoT/Definer#readme"
+}

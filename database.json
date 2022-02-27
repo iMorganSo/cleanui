@@ -1,0 +1,132 @@
+{
+    "intents": {
+        "count": 6,
+        "manager": "intent",
+        "USERS_INFO": {
+          "type": "API & Database request",
+          "category": "Economic",
+          "currentQueue": ["QUEUE_1", "QUEUE_8"],
+          "imports": ["API", "UNSELECTED", "REQ", "DATABASE"]
+        },
+        "SYSTEM_REQUIREMENTS": {
+        "type": "Get CleanUI's system requirements",
+        "category": "Economic",
+        "currentQueue": ["QUEUE_2", "QUEUE_4"],
+        "imports": ["DATABASE", "UI", "REQ"]
+        },
+        "UI_INFO": {
+          "type": "Get CleanUI's info",
+          "category": "Low Medium",
+          "currentQueue": ["QUEUE_3", "QUEUE_5"],
+          "imports": ["REQ", "INFO", "UI"]
+        },
+        "USERS_PROFILE": {
+          "type": "Get user profile info",
+          "category": "Medium",
+          "currentQueue": ["ALL"],
+          "imports": ["SEL", "MANAGER", "UI"]
+        },
+        "QUEUE_INFO": {
+          "type": "Queue info request",
+          "category": "Medium",
+          "currentQueue": ["ALL"],
+          "imports": ["REQ", "QUEUEDATABASE", "UI"]
+        },
+        "IMPORT_REQUESTS": {
+          "type": "Import info requests",
+          "category": "High Medium",
+          "currentQueue": ["QUEUE_10", "QUEUE_11", "QUEUE_12"],
+          "imports": ["REQ", "UI", "IMPORTS"]
+        },
+        "GETTING_INFO": {
+          "type": "Get info about request, intent, queue, collection...",
+          "category": "Flagship",
+          "currentQueue": ["QUEUE_10"],
+          "imports": ["GET", "MANAGE", "INFO", "SEND"]
+        },
+        "DEFINE_OBJECT": {
+          "type": "Define an object",
+          "category": "Super Flagship",
+          "currentQueue": ["QUEUE_1"],
+          "imports": ["DEFINE", "OBJECTS", "INFO", "REQ", "UI"]
+          
+        }
+      },
+      "queues": {
+        "count": 12,
+        "manager": "queue",
+        "QUEUE_1": {
+          "intents": 4,
+          "requests": 3,
+          "imports": 0
+        },
+        "QUEUE_2": {
+          "intents": 3,
+          "requests": 2,
+          "imports": 0
+        },
+        "QUEUE_3": {
+          "intents": 3,
+          "requests": 2,
+          "imports": 0
+        },
+        "QUEUE_4": {
+          "intents": 3,
+          "requests": 2,
+          "imports": 0
+        },
+        "QUEUE_5": {
+          "intents": 3,
+          "requests": 2,
+          "imports": 0
+        },
+        "QUEUE_6": {
+          "intents": 2,
+          "requests": 1,
+          "imports": 0
+        },
+        "QUEUE_7": {
+          "intents": 2,
+          "requests": 1,
+          "imports": 0
+        },
+        "QUEUE_8": {
+          "intents": 3,
+          "requests": 3,
+          "imports": 0
+        },
+        "QUEUE_9": {
+          "intents": 2,
+          "requests": 1,
+          "imports": 0
+        },
+        "QUEUE_10": {
+          "intents": 3,
+          "requests": 1,
+          "imports": 1
+        },
+        "QUEUE_11": {
+          "intents": 2,
+          "requests": 1,
+          "imports": 1
+        },
+        "QUEUE_12": {
+          "intents": 2,
+          "requests": 1,
+          "imports": 1
+        }
+      },
+      "collections": {
+        "count": 3,
+        "manager": "collection",
+        "COLLECTION_1": {
+          "": ""
+        },
+        "COLLECTION_2": {  
+          
+        },
+        "COLLECTION_3": {
+          
+        }
+    }    
+}
