@@ -62,12 +62,12 @@ UI:"CURRENT_SELECTED_OPTION":"URL"??"SUCCESSFUL??FAILURE GET"^$"<PROMISE%OBJECT@
 
 # Permissions
 
-| Zone Level | Permissions | Info |
+| Zone Level / Permissions | Info |
 | - | - |
-| DANGER |**ADMINISTRATOR**| Giving the user all the access of editing, managing, Your API|
-| HIGH |**CONSOLE_MANAGER**| Giving the user all the access of editing, managing... Your Console|
-| HIGH | **DATA_MANAGER** | Giving the user all the access of editing, managing, removing... Your API Data|
-| MEDIUM | **CONTEXT_MANAGER** | Giving the user all the access of editing, managing, removing... Your API Context|
-| MEDIUM | **SUPERVISOR** | Giving the user access to supervise, use... Your API|
-| LOW | **GUEST** | Giving the user access to use, send an specified data to Your API, **WON'T IMPACT YOUR API**|
-| DEFAULT | **USER** | Giving the user access to use Your API|
+| DANGER / **ADMINISTRATOR**| Giving the user all the access of editing, managing, Your API|
+| HIGH / **CONSOLE_MANAGER**| Giving the user all the access of editing, managing... Your Console|
+| HIGH / **DATA_MANAGER** | Giving the user all the access of editing, managing, removing... Your API Data|
+| MEDIUM / **CONTEXT_MANAGER** | Giving the user all the access of editing, managing, removing... Your API Context|
+| MEDIUM / **SUPERVISOR** | Giving the user access to supervise, use... Your API|
+| LOW / **GUEST** | Giving the user access to use, send an specified data to Your API, **WON'T IMPACT YOUR API**|
+| DEFAULT / **USER** | Giving the user access to use Your API|
