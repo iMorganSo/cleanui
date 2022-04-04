@@ -1,22 +1,31 @@
 # CleanUI
-An API UI for connecting the other API's to the CleanUI UI's as module manager to fast up the your API!
+An API UI for connecting the other API's to the CleanUI UI's as module manager to fast up your API!
 
 # Requirements
 **Requires an Supported API Handler, Recommended(Definery).**
 
 **Requires installing axios package.**
 # Usages
+
+Data with expire time
 ```js
 const { CleanUI, Database } = require("cleanui");
 const Defnery = require("definery");
 const define = Definery.definer;
 
 CleanUI.get("Your API URL", res => {
-    define(res, async(data) => {
-        let response = define((res, data), {expires: true, expireTime: 900000, data: data, edited: "https//cleanui.gq/api/send_option"});
-        await CleanUI.send.<send_option>(response);
-    })
-});
+   const response = define(res, {expires: true, expireTime: "Set expiration time as millie second without a string", res: res, data: "Enter your API data that you want to store using Object() with JSON strings, arrays, objects, etc"});
+   CleanUI.send.<send_option>("Your API URL", response, {api: true, expires: true, expireTime: "Enter the expiration time again"});
+})
+```
+
+Data without expire time
+```js
+
+CleanUI.get("Your API URL", res => {
+   const response = define(res, {expires: false, res: res, data: "Enter your API data that you want to store using Object() with JSON strings, arrays, objects, etc"});
+   CleanUI.send.<send_option>("Your API URL", response, {api: true, expires: false});
+})
 
 ```
 ### Another usage
@@ -43,12 +52,16 @@ axios.get("Your API URL").then(res => {
 |**EMIT_LIMITER**| Send the API data as **Emit Limiter** data|
 |**RESPANDBLE**| Send the API data as **Respandble** data|
 |**JSON_OBJECT**| Send the API data as **JSON Object** data|
-| **DBA_DATA**| Send the API data as **DBA** data|
+| **DBA_DATA**| Send the API data as **Direct Base Address(DBA)** data|
 
 Returned To The UI Database(As **Peura** Language):
 
 ```json
-UI:"CURRENT_SELECTED_OPTION":"URL"??"SUCCESSFUL??FAILURE GET"^$"<PROMISE%OBJECT@REPEAT>"
+@data: "CURRENT_SELECTED_OPTION"::"URL"@"SUCCESSFUL??FAILURE SEND">>"<PROMISE%OBJECT@REPEAT>".
+@author: "Main adminsitrator"@"<PROMISE%PERMISSION@FETCH>".
+@time: "TIME_OF_SENDING"@"<PROMISE%TIMESTAMP@FETCH>".
+@axios_data: "CURRENT_AXIOS_DATA_CACHE"@"<PROMISE%AXIOS_DATA@CACHE>".
+@userCount: "CURRENT_USERS_COUNT_WITH_PERMISSION"::permisson?"each user permission and permission number"main_admin@"<PERMISSION_ADDRESS%USERS_EACH@FETCH>".
 ```
 
 # Console options
@@ -60,7 +73,7 @@ UI:"CURRENT_SELECTED_OPTION":"URL"??"SUCCESSFUL??FAILURE GET"^$"<PROMISE%OBJECT@
 |**add**| Add some user to your API console |
 |**remove**| Remove some user to your API console|
 
-# Permissions
+# Users Permissions
 
 | Zone Level / Permissions | Info |
 | - | - |

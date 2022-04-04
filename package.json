@@ -1,6 +1,6 @@
 {
   "name": "clean.ui-api",
-  "version": "0.0.4DEV",
+  "version": "0.0.5DEV",
   "description": "Official CleanUI NPM package",
   "main": "index.js",
   "scripts": {
