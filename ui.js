@@ -70,7 +70,7 @@ const CleanUI = {
             }
 
             return console.log("Removing " + user + " From your API Console"), user => {
-                return user.remove({type: "USER_CONSOLE", id: user.id, remover: author.id})
+                return user.remove({type: "USER_CONSOLE", id: user.id, author: author.id})
             }
         },
         permissions: {
@@ -231,7 +231,7 @@ const CleanUI = {
         return this.name, this.url, this.data, this.expires;
    },
    info: {
-       version: "0.0.4-DEV",
+       version: "0.0.6-DEV",
        package: "cleanui-api",
        website: "https://cleanui.gq",
        website_api_urls: "https://cleanui.gq/api",
