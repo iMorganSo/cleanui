@@ -1,6 +1,8 @@
 const axios = require("axios");
 
 const Database = require("./database.json")
+const error = require("./errors.center.js")
+const fs = require('fs')
 
 const CleanUI = {
    get: function(url) {
@@ -13,6 +15,17 @@ const CleanUI = {
        }
         return axios.get(url);
    },
+   setSettingsFile: function(file) {
+       const path = "./settings.peurest"
+       fs.access(path, fs.F_OK, (err) => {
+        if (err) {
+          console.error(`Cannot find file with name ${path}, create a file with "${path}" name`)
+          return
+        } else {
+            return console.log("Successfully set CleanUI settings file")
+        }
+})
+        },
    console: {
         send: function(text) {
             if(!text) {

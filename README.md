@@ -158,6 +158,67 @@ const myAPI = new CleanUI.api("Your API name", "your API URL", {"Your API Data t
 ```
 # 
 
+# Errors center
+
+# Errors options
+
+| Option | Info |
+| - | - |
+| **DEFAULT_ERROR** | Default Error |
+| **UI_ERROR**| User Interface(UI) Error |
+| **INTERACTION_ERROR** | Interaction Error |
+| **RUNNER_ERROR** | Runner Error |
+| **EXTRACT_ERROR** | Extract Error |
+| **ROUTER_ERROR** | Router Error |
+| **CONSOLE_ERROR** | Console Error |
+| **CLOUD_ERROR** | Cloud Error |
+| **REQUEST_ERROR** | Request Error |
+| **SOKET_ERROR** | Soket Error |
+| **SYSTEM_ERROR** | System Error |
+| **OS_ERROR** | Operating System(OS) Error |
+| **COUNTER_ERROR** | Counter Error |
+| **CONTEXT_ERROR** | API Context Error |
+| **DEBUG_ERROR** | Debug Error |
+| **API_ERROR** | Application Programming interface(API) Error |
+# 
+
+usage
+```js
+const { CleanUI, Database, error } = require("cleanui");
+const Defnery = require("definery");
+const define = Defnery.definer;
+const axios = require("axios");
+
+const something = {hello: "hello", world: "world"};
+
+if(something.hello !== "hello") {
+   return new error("DEFAULT_ERROR", "Hello is undefined or unfetched")
+} else if(something.hello == "hello") {
+   return console.log("*hello* world!!!!!")
+};
+
+// using axios:
+axios.get("https://cleanui.gq/api/ui", response => {
+   if(response.data.interaction_status !== "200") {
+      return new error("INTERACTION_ERROR", "Interaction status is not 200")
+   } else {
+      return console.log("Success interaction")
+   }
+})
+
+```
+
+# CleanUI edit settings
+
+usage
+```js
+const { CleanUI, Database } = require("cleanui");
+const Defnery = require("definery");
+const define = Defnery.definer;
+
+CleanUI.setSettingsFile(); // File must be settings.peurest
+```
+
 # CleanUI public info
 
 # Info options

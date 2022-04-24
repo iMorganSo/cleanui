@@ -1,0 +1,56 @@
+using system.config;
+using Exit.System from "./commander/secet/ports/secretUse.js";
+using ConsoleEditor;
+
+Lang: Peura:: {
+system.consoleConfig: {
+printOutPut: Exit.System.Console.ImportAnotherLangConsole()
+}
+};
+
+Lang: JavaScript:: {
+MainBase: {
+AdaptivePower: Exit.Tools.Adaptive.Power({highBattery: Exit.Tools.Adaptive.SetPowerLimit("HIGH"); mediumBattery: Exit.Tools.Adaptive.SetPowerLimit("MEDIUM"); LowBattery: Exit.Tools.Adaptive.SetPowerLimit("LOW")})
+}};
+
+Lang: CoffeeScript:: {
+...
+};
+
+Lang: CSharp:: {
+System: {
+UI: Exit.UI.Name();
+}
+};
+
+Lang: Rust:: {
+Requests: {
+MainRequestURL: "https://cleanui.gq/api/requests"
+};
+Interaction: {
+InteractionDefaultLevel: "LOW";
+StaticInteractionDatabaseLevel: "LOW"
+};
+Databases: {
+RequestsDatabase: $"./{QCODE>>SUPERATE%%REQUESTSDATABASE}";
+InteractionDatabase: $"./{QCODE>>SUPERATE%%STATIC$$INTERACTIONDATABASE}"
+}
+};
+
+Lang: Python:: {
+OS: {
+DefaultFallBackServerNumber: 4;
+}
+};
+
+Lang: JSON:: {
+Database: {
+IntentsType: "LOCAL"
+};
+}:
+
+Lang: Lua:: {
+Counter: {
+Helper: "./count-helper.js"
+}
+};
