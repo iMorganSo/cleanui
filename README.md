@@ -208,9 +208,21 @@ axios.get("https://cleanui.gq/api/ui", response => {
 
 ```
 
-# CleanUI edit settings
+# CleanUI set settings file
 
-usage
+#### Note: Only using **peurest(peura settings)** language file
+#### Note: File name must be **settings.peurest**
+#### Note: File must be exists in the project files and not inside any folder
+## Faq:
+## Can i use CleanUI without any settings file? yes, you can use CleanUI without any settings file, but you won't edit any settings
+## Can i use **JSON** instead? no, why? Peurest is the only language that supporting all the programming(Most of popular) Languages instead of **JSON** that only letting you edit Javascript or else.
+
+## How do i use **Peurest**?:
+
+Step 1: you must create a file called **settings.peurest** in the project files without putting it in any folder.
+Step 2: Import the file in the main JavaScript file:
+
+
 ```js
 const { CleanUI, Database } = require("cleanui");
 const Defnery = require("definery");
@@ -218,6 +230,105 @@ const define = Defnery.definer;
 
 CleanUI.setSettingsFile(); // File must be settings.peurest
 ```
+Step 3: start entering the packages that you want to use, if the package:
+
+```peurest
+using system.config;
+using "package without string" from "author/file/package manager";
+```
+Set 4: Enter your languages that you're using in the project,
+
+```peurest
+using system.config;
+
+Lang: enter_full_language_name:: {
+   # now here set the settings of the language, even an file, example:
+   Strings: {
+      hello: "hello";
+      world: "world"
+   };
+   Numbers: {
+      zero: 0;
+      one: 1;
+      two: 2;
+      three: 3
+   };
+   Booleans: {
+      true: true;
+      false: false
+   };
+   Objects: {
+      object1: {
+         hello: "hello";
+         world: "world"
+      };
+      object2: {
+         hello: "hello";
+         world: "world"
+      };
+   }
+}
+
+# Full language example:
+
+using Exit.System from "./commander/secet/ports/secretUse.js";
+
+Lang: JavaScript:: {
+   Console: {
+      Adduser: {
+         username: "username";
+         id: "id";
+         permission: ["permission"];
+      };
+      EditConsoleName: Exit.System.Console.EditName("Old name", "New name");
+      }
+   }
+
+# Edit An file settings:
+
+File: "./file":: {
+   Path: {
+      FilePath: ".../file";
+   }
+};
+
+# Full File example:
+
+File "./commander/paths/jsonData/database.json":: {
+   Path: {
+      FilePath: "./commander/paths/jsonData/database.json";
+   };
+   Info: {
+      CreatedAt: "4/26/2022";
+      LatestUpdatedAt: "4/29/2022";
+      CreatedBy: "CleanUI";
+      UpdatedBy: "CleanUI"
+   };
+   Updates: {
+      History: {
+         "4/29/2022": {
+            UpdatedBy: "CleanUI";
+            UpdatedAt: "4/29/2022";
+            UpdatedAtTime: "12:34:21 PM";
+            UpdateInfo: {
+               Language: "JSON";
+               File: "database.json";
+               DataType: "JSON_VALUE";
+               Packages: {
+                  "clean.ui-api": "0.0.5-DEV";
+                  "axios": "0.19.2";
+                  "definery": "0.0.1-DEV";
+               };
+            }
+         }
+      }
+   }
+   }
+};
+}
+```
+
+Step 5: You all done!
 
 # CleanUI public info
 
